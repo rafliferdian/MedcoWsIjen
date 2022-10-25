@@ -55,7 +55,7 @@ class Sidebar extends Component {
     return (
       <nav className="sidebar sidebar-offcanvas" id="sidebar">
         <div className="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a className="sidebar-brand brand-logo"><img src={require('../../assets/images/logo.svg')} alt="logo" /></a>
+          <a className="sidebar-brand brand-logo"><img src={require('../../assets/images/MWISidebar.png')} alt="logo" /></a>
           <a className="sidebar-brand brand-logo-mini"><img src={require('../../assets/images/MWI.png')} alt="logo" /></a>
         </div>
         <ul className="nav">

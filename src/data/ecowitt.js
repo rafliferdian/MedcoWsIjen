@@ -39,9 +39,11 @@ export const getRealtime = async () => {
 
                 //pressure
                 const pressure_absolute = response.data.data.pressure.absolute.value
-                sessionStorage.setItem("pressure_absolute", pressure_absolute)
+                var pAbsolute = (pressure_absolute * 33.86389). toFixed(1)
+                sessionStorage.setItem("pressure_absolute", pAbsolute)
                 const pressure_relative = response.data.data.pressure.relative.value
-                sessionStorage.setItem("pressure_relative", pressure_relative)
+                var pRelative = (pressure_relative * 33.86389). toFixed(1)
+                sessionStorage.setItem("pressure_relative", pRelative)
 
                 //solar_and_uvi
                 const sau_solar = response.data.data.solar_and_uvi.solar.value

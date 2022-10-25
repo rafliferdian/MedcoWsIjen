@@ -10,11 +10,9 @@ function Login() {
       console.log(result)
       window.location.replace('/realtime')
       const name = result.user.displayName
-      // const email = result.user.email
       const profilPic = result.user.photoURL
 
       localStorage.setItem("name", name)
-      // localStorage.setItem("email", email)
       localStorage.setItem("profilPic", profilPic)
 
     }).catch((error) => {

@@ -5,7 +5,6 @@ import Spinner from '../app/shared/Spinner';
 const Realtime = lazy(() => import('./realtime/Realtime'));
 const History = lazy(() => import('./history/History'));
 const Login = lazy(() => import('./user-pages/Login'));
-const Error404 = lazy(() => import('./error-pages/Error404'));
 
 function AppRoutes() {
   if (localStorage.length <= 1) {
